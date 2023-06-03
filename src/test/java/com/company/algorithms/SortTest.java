@@ -2,6 +2,7 @@ package com.company.algorithms;
 
 import com.company.algorithms.impl.BubbleSorting;
 import com.company.algorithms.impl.InsertionSorting;
+import com.company.algorithms.impl.SelectionSorting;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -41,6 +42,22 @@ class SortTest {
     long duration = (endTime - startTime);
     System.out.println(
         "Time taken for sorting 100000 elements using Insertion Sort: "
+            + duration
+            + " nanoseconds");
+    for (int i = 0; i < arr.length - 1; i++) {
+      Assertions.assertTrue(arr[i] <= arr[i + 1]);
+    }
+  }
+
+  @Test
+  void testSelectionSort() {
+    long startTime = System.nanoTime();
+    Sorting selectionSorting = new SelectionSorting();
+    selectionSorting.sort(arr);
+    long endTime = System.nanoTime();
+    long duration = (endTime - startTime);
+    System.out.println(
+        "Time taken for sorting 100000 elements using Selection Sort: "
             + duration
             + " nanoseconds");
     for (int i = 0; i < arr.length - 1; i++) {

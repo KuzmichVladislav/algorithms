@@ -9,5 +9,6 @@ public interface Sorting {
     for (int j : arr) {
       System.out.print(j + " ");
     }
+    System.out.println();
   }
 }
