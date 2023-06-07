@@ -1,12 +1,12 @@
 package com.company.algorithms.impl;
 
-import com.company.algorithms.Sorting;
+import com.company.algorithms.Sort;
 
 /**
  * This is a SelectionSorting class that implements Sorting interface. It sorts an array of integers
  * using selection sort algorithm.
  */
-public class SelectionSorting implements Sorting {
+public class SelectionSort implements Sort {
 
   /**
    * Sorts an array of integers using selection sort algorithm.

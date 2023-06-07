@@ -1,8 +1,8 @@
 package com.company.algorithms;
 
-import com.company.algorithms.impl.BubbleSorting;
-import com.company.algorithms.impl.InsertionSorting;
-import com.company.algorithms.impl.SelectionSorting;
+import com.company.algorithms.impl.BubbleSort;
+import com.company.algorithms.impl.InsertionSort;
+import com.company.algorithms.impl.SelectionSort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,8 +22,8 @@ class SortTest {
   @Test
   void testBubbleSort() {
     long startTime = System.nanoTime();
-    Sorting bubbleSorting = new BubbleSorting();
-    bubbleSorting.sort(arr);
+    Sort bubbleSort = new BubbleSort();
+    bubbleSort.sort(arr);
     long endTime = System.nanoTime();
     long duration = (endTime - startTime);
     System.out.println(
@@ -36,8 +36,8 @@ class SortTest {
   @Test
   void testInsertionSort() {
     long startTime = System.nanoTime();
-    Sorting insertionSorting = new InsertionSorting();
-    insertionSorting.sort(arr);
+    Sort insertionSort = new InsertionSort();
+    insertionSort.sort(arr);
     long endTime = System.nanoTime();
     long duration = (endTime - startTime);
     System.out.println(
@@ -52,8 +52,8 @@ class SortTest {
   @Test
   void testSelectionSort() {
     long startTime = System.nanoTime();
-    Sorting selectionSorting = new SelectionSorting();
-    selectionSorting.sort(arr);
+    Sort selectionSort = new SelectionSort();
+    selectionSort.sort(arr);
     long endTime = System.nanoTime();
     long duration = (endTime - startTime);
     System.out.println(

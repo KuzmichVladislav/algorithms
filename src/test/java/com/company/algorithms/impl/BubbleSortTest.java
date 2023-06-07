@@ -1,6 +1,6 @@
 package com.company.algorithms.impl;
 
-import com.company.algorithms.Sorting;
+import com.company.algorithms.Sort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +13,8 @@ class BubbleSortTest {
       arr[i] = (int) (Math.random() * 100000);
     }
     long startTime = System.nanoTime();
-    Sorting bubbleSorting = new BubbleSorting();
-    bubbleSorting.sort(arr);
+    Sort bubbleSort = new BubbleSort();
+    bubbleSort.sort(arr);
     long endTime = System.nanoTime();
     long duration = (endTime - startTime);
     System.out.println(

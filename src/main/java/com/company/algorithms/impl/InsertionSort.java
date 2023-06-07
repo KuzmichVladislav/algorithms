@@ -1,12 +1,12 @@
 package com.company.algorithms.impl;
 
-import com.company.algorithms.Sorting;
+import com.company.algorithms.Sort;
 
 /**
  * This is a InsertionSorting class that implements Sorting interface. It sorts an array of integers
  * using insertion sort algorithm.
  */
-public class InsertionSorting implements Sorting {
+public class InsertionSort implements Sort {
 
   /**
    * Sorts an array of integers using insertion sort algorithm.

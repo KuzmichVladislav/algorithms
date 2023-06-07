@@ -1,12 +1,12 @@
 package com.company.algorithms.impl;
 
-import com.company.algorithms.Sorting;
+import com.company.algorithms.Sort;
 
 /**
  * This is a BubbleSorting class that implements Sorting interface. It sorts an array of integers
  * using bubble sort algorithm.
  */
-public class BubbleSorting implements Sorting {
+public class BubbleSort implements Sort {
 
   /**
    * Sorts an array of integers using bubble sort algorithm.

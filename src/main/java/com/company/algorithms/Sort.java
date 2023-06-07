@@ -1,6 +1,6 @@
 package com.company.algorithms;
 
-public interface Sorting {
+public interface Sort {
 
   void sort(int[] arr);
 
