@@ -1,6 +1,7 @@
 package com.company.algorithms.impl;
 
 import com.company.algorithms.Sort;
+import com.company.algorithms.impl.shell_step.StepGenerator;
 
 public class ShellSort implements Sort {
 
@@ -22,6 +23,20 @@ public class ShellSort implements Sort {
         // assign the temporary variable to its correct position in the sorted array
         arr[j] = temp;
       }
+    }
+  }
+
+  public void modifiedSort(int[] arr, StepGenerator stepGenerator) {
+    int step = stepGenerator.nextStep();
+    while (step > 0) {
+      for (int i = step; i < arr.length; i++) {
+        for (int j = i; j >= step && arr[j] < arr[j - step]; j -= step) {
+          int temp = arr[j];
+          arr[j] = arr[j - step];
+          arr[j - step] = temp;
+        }
+      }
+      step = stepGenerator.nextStep();
     }
   }
 }
