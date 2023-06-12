@@ -26,7 +26,7 @@ public class InsertionSort implements Sort {
       // Move elements greater than key to one position ahead of their current position
       while (j >= 0 && arr[j] > key) {
         arr[j + 1] = arr[j];
-        j = j - 1;
+        j--;
       }
       // Insert key into its correct position in the sorted array
       arr[j + 1] = key;

@@ -27,9 +27,7 @@ public class SelectionSort implements Sort {
         }
       }
       // Swap the found minimum element with the first element
-      int temp = arr[minIdx];
-      arr[minIdx] = arr[i];
-      arr[i] = temp;
+      swap(arr, minIdx, i);
     }
   }
 }

@@ -57,13 +57,4 @@ public class QuickSort implements Sort {
       quicksort(arr, i, right);
     }
   }
-
-  private void swap(int[] arr, int i, int j) {
-    // Store arr[i] in a temporary variable
-    int temp = arr[i];
-    // Set arr[i] to arr[j]
-    arr[i] = arr[j];
-    // Set arr[j] to the temporary variable
-    arr[j] = temp;
-  }
 }
