@@ -17,13 +17,13 @@ class SortTest {
   private static final Logger LOGGER = LoggerFactory.getLogger(SortTest.class);
 
   int[] arr;
-  int arraySize = 100;
+  int arraySize = 1000000;
 
   @BeforeEach
   void initArray() {
     arr = new int[arraySize];
-//    IntStream.range(0, arr.length).forEach(i -> arr[i] = (int) (Math.random() * arraySize));
-    IntStream.range(0, arr.length).forEach(i -> arr[i] = i);
+        IntStream.range(0, arr.length).forEach(i -> arr[i] = (int) (Math.random() * arraySize));
+//    IntStream.range(0, arr.length).forEach(i -> arr[i] = i);
   }
 
   @Test
@@ -112,6 +112,19 @@ class SortTest {
     long endTime = System.nanoTime();
     long duration = (endTime - startTime);
     loggingTakenTime(duration, "Shell with Knut step");
+    IntStream.range(0, arr.length - 1)
+        .mapToObj(i -> arr[i] <= arr[i + 1])
+        .forEach(Assertions::assertTrue);
+  }
+
+  @Test
+  void testMergeSort() {
+    long startTime = System.nanoTime();
+    Sort mergeSort = new MergeSort();
+    mergeSort.sort(arr);
+    long endTime = System.nanoTime();
+    long duration = (endTime - startTime);
+    loggingTakenTime(duration, "Merge");
     IntStream.range(0, arr.length - 1)
         .mapToObj(i -> arr[i] <= arr[i + 1])
         .forEach(Assertions::assertTrue);
