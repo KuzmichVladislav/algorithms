@@ -1,7 +1,7 @@
-package com.company.algorithms.impl;
+package com.company.algorithms.sorting.impl;
 
-import com.company.algorithms.Sort;
-import com.company.algorithms.impl.shell_step.StepGenerator;
+import com.company.algorithms.sorting.Sort;
+import com.company.algorithms.sorting.impl.shell_step.StepGenerator;
 
 public class ShellSort implements Sort {
 

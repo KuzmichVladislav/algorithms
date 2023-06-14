@@ -1,6 +1,6 @@
-package com.company.algorithms.impl;
+package com.company.algorithms.sorting.impl;
 
-import com.company.algorithms.Sort;
+import com.company.algorithms.sorting.Sort;
 
 /**
  * This is a SelectionSorting class that implements Sorting interface. It sorts an array of integers

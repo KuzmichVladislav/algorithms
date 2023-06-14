@@ -1,9 +1,9 @@
-package com.company.algorithms;
+package com.company.algorithms.sorting;
 
-import com.company.algorithms.impl.*;
-import com.company.algorithms.impl.shell_step.impl.HibbardStep;
-import com.company.algorithms.impl.shell_step.impl.KnutStep;
-import com.company.algorithms.impl.shell_step.impl.ShellStep;
+import com.company.algorithms.sorting.impl.*;
+import com.company.algorithms.sorting.impl.shell_step.impl.HibbardStep;
+import com.company.algorithms.sorting.impl.shell_step.impl.KnutStep;
+import com.company.algorithms.sorting.impl.shell_step.impl.ShellStep;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,13 +17,16 @@ class SortTest {
   private static final Logger LOGGER = LoggerFactory.getLogger(SortTest.class);
 
   int[] arr;
-  int arraySize = 1000000;
+  int arraySize = 10000;
 
   @BeforeEach
   void initArray() {
     arr = new int[arraySize];
-        IntStream.range(0, arr.length).forEach(i -> arr[i] = (int) (Math.random() * arraySize));
-//    IntStream.range(0, arr.length).forEach(i -> arr[i] = i);
+    //        IntStream.range(0, arr.length).forEach(i -> arr[i] = (int) (Math.random() *
+    // arraySize));
+    IntStream.range(0, arr.length).forEach(i -> arr[i] = i);
+    arr[2] = 99998;
+    arr[1] = 99999;
   }
 
   @Test

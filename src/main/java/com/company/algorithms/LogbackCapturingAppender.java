@@ -1,4 +1,4 @@
-package com.company.algorithms.logger;
+package com.company.algorithms;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.AppenderBase;
@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("unused")
-public class LogbackCapturingAppender extends AppenderBase<ILoggingEvent> {
+public class
+LogbackCapturingAppender extends AppenderBase<ILoggingEvent> {
   private final List<ILoggingEvent> events = new ArrayList<>();
 
   @Override
