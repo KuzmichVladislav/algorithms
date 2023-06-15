@@ -3,16 +3,11 @@ package com.company.algorithms.sorting.impl;
 import com.company.algorithms.sorting.Sort;
 
 /**
- * This is a SelectionSorting class that implements Sorting interface. It sorts an array of integers
- * using selection sort algorithm.
+ * The SelectionSort class implements Sort interface. It sorts an array of integers using Selection
+ * sort algorithm.
  */
 public class SelectionSort implements Sort {
 
-  /**
-   * Sorts an array of integers using selection sort algorithm.
-   *
-   * @param arr - array of integers to be sorted
-   */
   @Override
   public void sort(int[] arr) {
     // Get the length of the array

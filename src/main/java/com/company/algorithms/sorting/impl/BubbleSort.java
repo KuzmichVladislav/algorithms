@@ -3,16 +3,11 @@ package com.company.algorithms.sorting.impl;
 import com.company.algorithms.sorting.Sort;
 
 /**
- * This is a BubbleSorting class that implements Sorting interface. It sorts an array of integers
- * using bubble sort algorithm.
+ * The BubbleSorting class implements Sort interface. It sorts an array of integers using Bubble
+ * sort algorithm.
  */
 public class BubbleSort implements Sort {
 
-  /**
-   * Sorts an array of integers using bubble sort algorithm.
-   *
-   * @param arr - array of integers to be sorted
-   */
   @Override
   public void sort(int[] arr) {
     // Get the length of the array

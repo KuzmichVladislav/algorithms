@@ -3,6 +3,10 @@ package com.company.algorithms.sorting.impl;
 import com.company.algorithms.sorting.Sort;
 import com.company.algorithms.sorting.impl.shell_step.StepGenerator;
 
+/**
+ * The ShellSort class implements Sort interface. It sorts an array of integers using Shell sort
+ * algorithm.
+ */
 public class ShellSort implements Sort {
 
   @Override

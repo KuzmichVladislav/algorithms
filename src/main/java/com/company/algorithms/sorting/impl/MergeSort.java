@@ -2,6 +2,10 @@ package com.company.algorithms.sorting.impl;
 
 import com.company.algorithms.sorting.Sort;
 
+/**
+ * The MergeSort class implements Sort interface. It sorts an array of integers using Merge sort
+ * algorithm.
+ */
 public class MergeSort implements Sort {
 
   @Override

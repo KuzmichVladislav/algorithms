@@ -2,6 +2,10 @@ package com.company.algorithms.sorting.impl;
 
 import com.company.algorithms.sorting.Sort;
 
+/**
+ * The QuickSort class implements Sort interface. It sorts an array of integers using Quick sort
+ * algorithm.
+ */
 public class QuickSort implements Sort {
 
   @Override
