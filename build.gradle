@@ -17,6 +17,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31'
+    implementation 'org.apache.pdfbox:pdfbox:2.0.27'
+    implementation 'org.apache.opennlp:opennlp-tools:2.2.0'
 }
 
 test {
