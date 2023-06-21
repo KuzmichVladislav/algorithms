@@ -63,4 +63,12 @@ class SearchTest {
     int result = fibonacciSearch.search(arr, 43);
     Assertions.assertEquals(44, result);
   }
+
+  @Test
+  void testInterpolationSearch() {
+    Search interpolationSearch = new InterpolationSearch();
+    Arrays.sort(arr);
+    int result = interpolationSearch.search(arr, 43);
+    Assertions.assertEquals(44, result);
+  }
 }
