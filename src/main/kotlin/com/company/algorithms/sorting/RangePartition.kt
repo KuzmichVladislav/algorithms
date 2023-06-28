@@ -7,6 +7,7 @@ package com.company.algorithms.sorting
  */
 object RangePartition {
 
+    // Time complexity is linear or O(n).
     fun rangePartition(arr: IntArray, lower: Int, higher: Int) {
         var start = 0
         var end = arr.size - 1

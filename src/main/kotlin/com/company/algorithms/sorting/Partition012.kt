@@ -6,6 +6,7 @@ package com.company.algorithms.sorting
  */
 object Partition012 {
 
+    // Time complexity is linear or O(n).
     fun partition012(arr: IntArray) {
         val counts = IntArray(3)
         for (i in arr.indices) {
@@ -23,6 +24,7 @@ object Partition012 {
         }
     }
 
+    // Time complexity is linear or O(n).
     fun partition012SecondSolution(arr: IntArray) {
         var left = 0
         var right = arr.size - 1

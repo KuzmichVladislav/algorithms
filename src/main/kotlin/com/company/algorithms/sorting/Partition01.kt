@@ -7,6 +7,13 @@ package com.company.algorithms.sorting
  */
 object Partition01 {
 
+    /**
+     * Time complexity looks like a quadratic (loop inside a loop)
+     * but it is linear or O(n). As at each iteration of the inner loop,
+     * either the left is increasing or the right is decreasing.
+     * Once left is equal or greater than right, the loops stop.
+     * Therefore, in total, the inner loops combined run for N number of times.
+     */
     fun partition01(arr: IntArray, size: Int): Int {
         var left = 0
         var right = size - 1
@@ -19,9 +26,7 @@ object Partition01 {
                 right--
             }
             if (left < right) {
-                val temp = arr[left]
-                arr[left] = arr[right]
-                arr[right] = temp
+                arr[right] = arr[left].also { arr[left] = arr[right] }
                 count++
             }
         }
