@@ -71,4 +71,12 @@ class SearchTest {
     int result = interpolationSearch.search(arr, 43);
     Assertions.assertEquals(44, result);
   }
+
+  @Test
+  void testTernarySearch() {
+    Search ternarySearch = new TernarySearch();
+    Arrays.sort(arr);
+    int result = ternarySearch.search(arr, 43);
+    Assertions.assertEquals(44, result);
+  }
 }
